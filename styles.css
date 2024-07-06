@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/360_F_345880772_zIT2mkdCzTthplO7xqaGGrMspN0jw0ll.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color:  #774f77;
+    color: rgb(181, 172, 181);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 80px;
+}
+
+nav {
+    background: #4f4e4e;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar a {
+    color: rgb(247, 113, 222);
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar a i {
+    margin-right: 8px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.category-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: calc(50% - 30px); /* Adjusted width for 2-column layout */
+    max-width: 300px; /* Max width for responsiveness */
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.category-card button {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.category-card button:hover {
+    background-color: #555;
+}
+
+#quiz-container {
+    padding: 20px;
+    width: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#quiz-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+#options {
+    list-style-type: none;
+    padding: 0;
+}
+
+#options li {
+    margin-bottom: 10px; /* Add space between options */
+}
+
+#options label {
+    display: block;
+    padding: 10px;
+    background-color: #2c2a2a; /* Light background for options */
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Ensure label position relative for pseudo-element */
+}
+
+#options input[type="checkbox"] {
+    display: none; /* Hide default checkboxes */
+}
+
+#options input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    left: 10px; /* Adjust as needed for checkbox position */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+#options input[type="checkbox"]:checked + label:before {
+    background-color: #efe6e6; /* Change background color when checked */
+}
+
+#options label:hover {
+    background-color: #413e3e; /* Lighten background on hover */
+}
+
+#quiz-container button {
+    background-color: #019d25;
+    color: rgb(19, 20, 19);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#quiz-container button:hover {
+    background-color: #555;
+}
+
+#timer {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff0000; /* Red color for visibility */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
